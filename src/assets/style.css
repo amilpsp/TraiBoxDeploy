@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* ONLY NUMBERS FOR RGB VALUES INSTEAD OF COLOR CODES, CHECK LINK IN TAILWIND CONFIG COMMENTS FOR EXPLANATION  */
+  --darkest:22,22,22;
+  --dark:28,28,28;
+  --midtone: 40, 40, 40;
+  --mid-light: 63, 63, 63;
+  --lightest: 202, 202, 202;
+  --accent: 74, 188, 158;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  /*  overflow-x: hidden; */
+  box-sizing: border-box;
+}
+h1 {
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+h2 {
+  font-size: xx-large;
+}
+h3 {
+  font-size: x-large;
+}
+h4 {
+  font-size: larger;
+}
+#component-container{
+  padding:1rem;
+}
+.lorem{
+  color: blue;
+}

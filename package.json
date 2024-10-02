@@ -1,0 +1,38 @@
+{
+  "name": "traibox-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "serve": "vue-cli-service serve --host 0.0.0.0",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.6",
+    "@vueuse/core": "^11.0.3",
+    "@vueuse/motion": "^2.2.5",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.4",
+    "primevue": "^4.0.4",
+    "tailwindcss-primeui": "^0.3.4",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@primevue/auto-import-resolver": "^4.0.7",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.1"
+  }
+}
