@@ -5,9 +5,11 @@ import AboutView from "./views/about.vue";
 import OurProductView from "./views/ourProduct.vue"
 import ContactView from "./views/contact.vue";
 import BlogView from "./views/blog.vue";
+import TermsOfServiceView from "./views/termsOfService.vue";
+import PrivacyPolicyView from "./views/privacyPolicy.vue"
+import ComplianceCertificationsView from "./views/complianceCertifications.vue"
 import GetStartedView from "./views/getStarted.vue";
-import InvestorsView from "./views/investors.vue";
-import LegalInformationView from "./views/legalInformation.vue";
+
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -24,10 +26,6 @@ export default createRouter({
       path: "/our-product",
     },
     {
-      component: InvestorsView,
-      path: "/investors",
-    },
-    {
       component: ContactView,
       path: "/contact",
     },
@@ -36,8 +34,16 @@ export default createRouter({
       path: "/blog",
     },
     {
-      component: LegalInformationView,
-      path: "/legal-information",
+      component: TermsOfServiceView,
+      path: "/terms-of-service",
+    },
+    {
+      component: PrivacyPolicyView,
+      path: "/privacy-policy",
+    },
+    {
+      component: ComplianceCertificationsView,
+      path: "/compliance-certifications",
     },
     {
       component: GetStartedView,

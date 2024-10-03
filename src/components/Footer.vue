@@ -26,9 +26,9 @@
 </svg>
   </div>
   <div id="terms" class="flex flex-col md:flex-row justify-end order-3 flex-grow gap-3 md:gap-10 text-start md:text-center">
-    <router-link to="/legal-information">Privacy Policy</router-link>
-    <router-link to="/legal-information">Terms of Service</router-link>
-    <router-link to="/legal-information">Compliance Certifications</router-link>
+    <p>Privacy Policy</p>
+    <p>Terms of Service</p>
+    <p>Compliance Certifications</p>
   </div>
 </section>
 </template>
