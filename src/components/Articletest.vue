@@ -14,7 +14,7 @@
        
       <!--   <div class="p-5 flex flex-col justify-center  gap-6 sm:gap-5 sm:w-[20rem] sm:items-start"> -->
           
-            <img :src=picture_src  class="w-[4rem] object-contain ">
+            <img :src=picture_src  class="w-[4rem] object-contain " />
             <h4 class="text-white font-semibold text-[1.2rem] sm:text-left">{{title}}</h4>
             <p class="text-zinc-300">{{paragr}}</p>
 <!--         </div> -->
