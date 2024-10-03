@@ -58,20 +58,22 @@
     <!-- Desktop Navigation Links -->
     <section 
       id="desktop-nav-links" 
-      class="hidden md:flex md:text-xl w-fit justify-around items-center gap-5 lg:gap-12">
+      class="hidden md:flex lg:text-xl w-fit justify-around items-center gap-5 lg:gap-12">
       
-      <router-link class="hover:text-accent hover:font-semibold text-white" to="/">Home</router-link>
+      <router-link class="hover:text-accent text-white" to="/">Home</router-link>
+      <router-link class="hover:text-accent text-white" to="/our-product">Our Product</router-link>
+      <router-link class="hover:text-accent text-white" to="/investors">Investors</router-link>
 
       <!-- Click-Triggered Dropdown for "Our Product" -->
-      <div class="relative" ref="dropdownRef">
+<!--       <div class="relative" ref="dropdownRef"> -->
         <!-- Main Link with Arrow Down -->
-        <div
-          class="flex items-center cursor-pointer hover:text-accent hover:font-semibold text-white"
+       <!--  <div
+          class="flex items-center cursor-pointer hover:text-accent text-white"
           @click="toggleDropdown"
         >
-          <span>Our Product</span>
+          <span>Our Product</span> -->
           <!-- Arrow Down SVG -->
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4 ml-1"
             fill="none"
@@ -84,11 +86,11 @@
               stroke-width="2"
               d="M19 9l-7 7-7-7"
             />
-          </svg>
-        </div>
+          </svg> -->
+        <!-- </div> -->
 
         <!-- Dropdown Items -->
-        <section
+       <!--  <section
           id="dropdown-items"
           v-if="isDropdownOpen"
           class="absolute left-0 mt-2 w-48 bg-midtone rounded-lg shadow-lg flex flex-col bg-darkBg"
@@ -115,24 +117,22 @@
             for investors
           </router-link>
         </section>
-      </div>
+      </div> -->
 
-      <router-link class="hover:text-accent hover:font-semibold text-white" to="/about-us">
+      <router-link class="hover:text-accent text-white" to="/about-us">
         About Us
       </router-link>
-      <router-link class="hover:text-accent hover:font-semibold text-white" to="/blog">
+      <router-link class="hover:text-accent text-white" to="/blog">
         Blog
       </router-link>
-      <router-link class="hover:text-accent hover:font-semibold text-white" to="/contact">
-        Contact Us
-      </router-link>
+      
     </section>
 
     <router-link
-      class="hidden md:flex hover:text-accent hover:font-semibold text-white"
-      to="/get-started"
+      class="hidden md:flex lg:text-xl hover:text-accent text-white"
+      to="/contact"
     >
-      Get Started
+    <TraiButton text="Contact Us"/>
     </router-link>
 
     <!-- Mobile Hamburger Menu Button -->
@@ -178,8 +178,9 @@
       </div>
 
       <!-- Mobile Navigation Links -->
-      <router-link to="/" @click="toggleMenu">home</router-link>
-
+      <router-link to="/" @click="toggleMenu">Home</router-link>
+      <router-link to="/our-product" @click="toggleMenu">Our Product</router-link>
+<!-- 
       <div id="our-product" class="flex flex-col">
         <router-link to="/our-product" @click="toggleMenu">
           Our Product
@@ -195,14 +196,15 @@
             For Investors
           </router-link>
         </div>
-      </div>
-
+      </div> -->
+      
+      <router-link to="/investors" @click="toggleMenu">Investors</router-link>
       <router-link to="/about-us" @click="toggleMenu">About Us</router-link>
       <router-link to="/blog" @click="toggleMenu">Blog</router-link>
       <router-link to="/contact" @click="toggleMenu">Contact Us</router-link>
-      <router-link to="/get-started" @click="toggleMenu">
+      <!-- <router-link to="/get-started" @click="toggleMenu">
         Get Started
-      </router-link>
+      </router-link> -->
     </section>
   </nav>
 </template>

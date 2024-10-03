@@ -1,52 +1,54 @@
 <template>
-  <div class="flex items-baseline justify-evenly gap-5 text-center py-16 md:py-32 min-h-screen">
+  <div class="flex items-baseline justify-evenly gap-5 text-center py-20 md:pt-32 min-h-screen">
 
-    <section id="side-menu" class="text-left">
-      <ol v-for="node in treeNodes">
-        <li :key="node.title">{{node.title}}</li>
-        <ol v-for="item in node.content">
-          <li :key="item">
-            {{item.title}}
-          </li>
+    <section id="side-menu" class="text-left max-lg:hidden">
+      <div class="flex flex-col gap-1 h-fit fixed p-2 left-[2vw] top-28 2xl:top-36 xl:left-[10vw]  2xl:text-lg ">
+        <ol v-for="node in treeNodes">
+          <li :key="node.title"><a :href="'#/legal-information/#'+node.id">{{node.title}}</a></li>
+          <ol v-for="item in node.content">
+            <li :key="item">
+              {{item.title}}
+            </li>
+          </ol>
         </ol>
-      </ol>
+      </div>
     </section>
 
-    <section class="flex flex-col text-left max-w-[60vw] gap-24">
+    <section class="flex flex-col text-left max-w-[93%] sm:max-w-[75%] lg:max-w-[60%] xl:max-w-[50%] gap-24">
       
-      <div v-for="node in treeNodes" :key="node.title">
-        <article class="flex flex-col gap-5">
+      <div v-for="node in treeNodes" :key="node.id">
+        <article class="flex flex-col gap-8">
           <h1 :id="node.id" class="leading-tight">{{ node.title }}</h1>
 
-          <div v-for="child in node.content" :key="child.title || child">
+          <div v-for="child in node.content" :key="child.title || child" class="flex flex-col gap-5">
             
-            <h2 v-if="child.title">{{ child.title }}</h2>
-            <p v-if="typeof child === 'string'" class="childIsString">{{ child }}</p>
+            <h2 v-if="child.title" class="leading-tight flex flex-col gap-2">{{ child.title }}</h2>
+            <p v-if="typeof child === 'string'" class="childIsString lg:text-lg 2xl:text-xl">{{ child }}</p>
             
-            <div v-if="Array.isArray(child)">
-              <p v-for="grandchild in child" class="grandchild pl-2">{{grandchild}}</p>
+            <div v-if="Array.isArray(child)" class="flex flex-col gap-2">
+              <p v-for="grandchild in child" class="grandchild pl-2 lg:text-lg 2xl:text-xl">{{grandchild}}</p>
             </div>
 
 
-            <div v-if="Array.isArray(child.content)">
+            <div v-if="Array.isArray(child.content)" class="flex flex-col gap-5">
 
-              <div v-for="subContent in child.content" :key="subContent" >
+              <div v-for="subContent in child.content" :key="subContent" class="flex flex-col gap-2" >
 
-                <h3 v-if="subContent.title">{{subContent.title}}</h3>
-                <div v-if="Array.isArray(subContent.content)">
-                  <p v-for="item in subContent.content" class="sub-content-item">{{item}}</p>
+                <h3 v-if="subContent.title" class="leading-tight">{{subContent.title}}</h3>
+                <div v-if="Array.isArray(subContent.content)" class="flex flex-col gap-2">
+                  <p v-for="item in subContent.content" class="sub-content-item lg:text-lg 2xl:text-xl">{{item}}</p>
                 </div>
                 
-                <p v-if="typeof subContent==='string'" class="subContent" >{{ subContent }}</p>
-                <div v-else-if="Array.isArray(subContent)">
-                  <p v-for="subItem in subContent" class="subItem pl-4">{{subItem}}</p>
+                <p v-if="typeof subContent==='string'" class="subContent lg:text-lg" >{{ subContent }}</p>
+                <div v-else-if="Array.isArray(subContent)" class="flex flex-col ">
+                  <p v-for="subItem in subContent" class="subItem pl-4 lg:text-lg 2xl:text-xl">{{subItem}}</p>
                 </div>
                 
               </div>
 
             </div>
 
-            <p class="child-content-string" v-if="typeof child.content === 'string'">{{ child.content }}</p>
+            <p class="child-content-string" v-if="typeof child.content === 'string'" >{{ child.content }}</p>
 
 
           </div>
@@ -57,6 +59,8 @@
   <!-- end of router-view-container -->
 </template>
 <script setup>
+import { RouterLink } from 'vue-router';
+
 
 const treeNodes=[
   {

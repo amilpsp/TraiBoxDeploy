@@ -21,6 +21,9 @@ module.exports = {
         darkText: withOpacity("--lightest"),
         accent: withOpacity("--accent"),
       },
+      screens: {
+        halfXl: "1060px",
+      },
     },
   },
   plugins: [require("tailwindcss-primeui", "@tailwindcss/aspect-ratio")],
