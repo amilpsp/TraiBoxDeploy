@@ -5,11 +5,11 @@ import { PrimeVueResolver } from "@primevue/auto-import-resolver";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/TraiBoxDeploy/',
+  base: "/TraiBoxDeploy/",
   plugins: [
     vue(),
     Components({
-      resolvers: [PrimeVueResolver()]
-    })
-  ]
-})
+      resolvers: [PrimeVueResolver()],
+    }),
+  ],
+});

@@ -8,14 +8,15 @@
             <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit voluptatum quod iusto placeat eligendi expedita ullam, sapiente rem aliquid impedit quibusdam officiis accusamus dolorum alias mollitia aliquam doloremque a?</p>
         </div>
     </article> -->
-    <article class="bg-blue-800/20 flex flex-col justify-center py-6 rounded-lg px-5 gap-6 sm:gap-5 sm:w-[20rem] sm:items-start">
+    <article class="bg-blue-800/20 flex flex-col justify-center py-4 rounded-lg px-5 gap-4 sm:gap-5 sm:max-w-lg sm:items-start shadow-lg">
 <!--  
         <img :src=picture_src  class="w-[6rem] object-contain hidden sm:block mx-4"> -->
        
       <!--   <div class="p-5 flex flex-col justify-center  gap-6 sm:gap-5 sm:w-[20rem] sm:items-start"> -->
-          
-            <img :src=picture_src  class="w-[4rem] object-contain " />
+            <div class="flex flex-col lg:flex-row lg:gap-4">
+            <img :src=picture_src  class="w-[2.5rem] object-contain "/>
             <h4 class="text-white font-semibold text-[1.2rem] sm:text-left">{{title}}</h4>
+            </div>
             <p class="text-zinc-300">{{paragr}}</p>
 <!--         </div> -->
     </article>
