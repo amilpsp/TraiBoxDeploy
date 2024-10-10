@@ -5,8 +5,8 @@
 </script>
 
 <template>
-  <body>
-    <main class="flex flex-col min-h-screen bg-darkBg text-darkText">
+  <body class="">
+    <main class="flex flex-col min-h-screen bg-[#010108] text-darkText">
       <Navbar class="flex flex-row" />
       <RouterView/>
       <Footer class="flex justify-center bg-dark" />

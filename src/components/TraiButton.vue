@@ -1,6 +1,6 @@
 
 <template>
-<button class=" text-white font-semibold tracking-wide py-2 px-5 rounded-full">
+<button class=" text-white font-semibold tracking-wide py-2 px-4 rounded-full shadow-lg ">
     {{ text }}
 </button>
 </template>
@@ -11,12 +11,12 @@ const props = defineProps({text: String})
 </script>
 <style scoped>
 button{
-    background: linear-gradient(-45deg, #23BDB4, #051B68, #000d46, #2ead90);
+    background: linear-gradient(-45deg, #d84f00, #e7a900, #d84f00);
     width:fit-content;
     align-self: center;
     font-size: 1.2rem;
-    background-size: 500%;
-  /*   box-shadow: 0px 0px 15px #006977; */
+    background-size: 200%;
 }
+
 
 </style>

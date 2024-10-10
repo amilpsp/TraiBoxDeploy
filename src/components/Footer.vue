@@ -4,7 +4,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/our-product">Our product</router-link>
     <router-link to="/about-us">About Us</router-link>
-    <router-link to="/blog">Blog</router-link>
+    <router-link to="/faq">FAQ</router-link>
     <router-link to="/contact">Contact Us</router-link>
   </div>
   <div id="socials" class="-order-1 md:order-2 flex-grow text-start">

@@ -1,17 +1,28 @@
 <template>
-    <article class="flex flex-row flex-wrap justify-around items-center gap-3 md:grid md:grid-cols-12 md:px-24 md:gap-x-10 xl:px-48 2xl:px-[24%] ">
-      <div :class="'flex h-full items-end '+(imgLeft?'col-start-6 col-span-7':'col-start-1 col-span-7')"><h3 class="max-w-15">{{header}}</h3></div>
-      <img v-if="imgSrc" :src="imgSrc" :alt="imgAlt" :class="'max-w-48'+(imgLeft?' row-start-1 row-span-2 col-start-1 col-span-5 ': 'row-start-1 row-span-2 col-start-8 col-span-5') ">
-      <div v-if="!imgSrc" :class="'bg-midLightBg h-[15vh] w-[30vh] md:h-full md:w-full ' + (imgLeft?' row-start-1 row-span-2 col-start-1 col-span-5 ': 'row-start-1 row-span-2 col-start-8 col-span-5') ">.</div>
-      <p :class="'flex h-full items-start'+(imgLeft?'col-start-6 col-span-7':'col-start-1 col-span-7')">{{textContent}}</p>
+    <article class="glassEffect flex flex-col justify-center py-4 rounded-lg px-5 gap-4 sm:gap-5 sm:max-w-lg sm:items-start shadow-lg">
+
+            <div class="flex flex-col lg:flex-row lg:gap-4">
+            <img :src=picture_src  class="w-[2.5rem] object-contain "/>
+            <h4 class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold text-[1.2rem] sm:text-left">{{title}}</h4>
+            </div>
+            <p class="text-blue-200/90">{{paragr}}</p>
     </article>
 </template>
 <script setup>
-  const props = defineProps({
-    header:String, 
-    textContent:String, 
-    imgLeft:Boolean,
-    imgSrc: String,
-    imgAlt: String
-  })
+const props = defineProps(
+    {
+        paragr: String,
+        title: String,
+        picture_src: String
+    }
+    )
 </script>
+<style scoped>
+.glassEffect{
+  background: rgba(2, 92, 247, 0.11);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(3, 58, 153, 0.27);
+}
+</style>
