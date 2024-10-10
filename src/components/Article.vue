@@ -2,7 +2,7 @@
     <article class="glassEffect flex flex-col justify-center py-4 rounded-lg px-5 gap-4 sm:gap-5 sm:max-w-lg sm:items-start shadow-lg">
 
             <div class="flex flex-col lg:flex-row lg:gap-4">
-            <img :src=picture_src  class="w-[2.5rem] object-contain "/>
+            <img :src=picture_src :alt=alt_desc class="w-[2.5rem] object-contain "/>
             <h4 class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold text-[1.2rem] sm:text-left">{{title}}</h4>
             </div>
             <p class="text-blue-200/90">{{paragr}}</p>
@@ -13,7 +13,8 @@ const props = defineProps(
     {
         paragr: String,
         title: String,
-        picture_src: String
+        picture_src: String,
+        alt_desc: String
     }
     )
 </script>

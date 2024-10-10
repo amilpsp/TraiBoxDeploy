@@ -1,6 +1,6 @@
 
 <template>
-<button class=" text-white font-semibold tracking-wide py-2 px-4 rounded-full shadow-lg ">
+<button class=" text-white font-medium tracking-wide py-2 px-4 rounded-full shadow-lg ">
     {{ text }}
 </button>
 </template>

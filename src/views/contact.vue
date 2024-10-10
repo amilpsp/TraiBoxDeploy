@@ -1,12 +1,12 @@
 <template>
-  <header>
+  <header class="bg-gradient-to-br from-[#04052e] to-60% to-[#010108] ">
     <div id="heroText" class="h-full flex justify-center flex-col">
       <h1 class="text-neutral-50 font-medium pb-5">Contact</h1>
       <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </header>
   <div class="flex flex-col items-center py-12 gap-7 md:flex-row md:items-start md:justify-center md:py-24 lg:gap-12">
-    <section id="contactInfo" class="flex flex-col justify-between max-w-[15rem] min-h-[25rem] content-center self-center gap-7 py-1 lg:self-stretch">
+    <section id="contactInfo" class="flex flex-col justify-between max-w-[18rem] min-h-[25rem] content-center self-center gap-7 py-1 lg:self-stretch">
       <article class="flex flex-col items-center text-center lg:flex-row lg:text-left">
         <PhoneIcon/>
         <div class="flex flex-col justify-center pt-3 lg:ml-3 lg:pt-0">
@@ -31,21 +31,9 @@
         </div>
       </article>
       <section id="socials" class="flex flex-row justify-center h-min col-start-9 col-span-4 gap-6">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
-            <path fill="#eee" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
-          </svg>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
-            <path fill="#eee" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
-          </svg>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
-            <path fill="#eee" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
-          </svg>
-        </div>
+        <LinkedInIcon/>
+        <FbIcon/>
+        <TwitterIcon/>
       </section>
     </section>
     <section id="form" class="w-full md:w-fit" >
@@ -74,7 +62,7 @@
             <label for="subject">Subject</label>
           </FloatLabel>
         <textarea placeholder="Write your message here :)" class="sm:col-span-2 w-full" maxlength="500" required></textarea>
-        <TraiButton type="submit" text="Submit" />
+        <TraiButton2 type="submit" text="Submit" />
       </form>
     </section>
   </div>
@@ -91,6 +79,9 @@
   </section>
 </template>
 <script setup>
+  import LinkedInIcon from "../components/LinkedInIcon.vue";
+  import FbIcon from "../components/FbIcon.vue";
+  import TwitterIcon from "../components/TwitterIcon.vue";
   import AutoComplete from 'primevue/autocomplete';
   import PhoneIcon from "../components/PhoneIcon.vue";
   import MailIcon from "../components/MailIcon.vue";
@@ -98,7 +89,7 @@
   import InputText from 'primevue/inputtext';
   import FloatLabel from 'primevue/floatlabel';
   import { ref, onMounted } from 'vue';
-import TraiButton from '../components/TraiButton.vue';
+import TraiButton2 from '../components/TraiButton2.vue';
   
 onMounted(() => {
   fetch('https://countryapi.io/api/all?apikey=m21hZ8EUN98I2qFUxz0URuqH1VQYQswTd7x9mSkD')
@@ -131,7 +122,6 @@ const search = (event) => {
 </script>
 <style scoped>
 header{
-  background: linear-gradient(to right, rgb(0, 153, 180),rgb(5, 0, 49)); 
   height: 60vh;
 
 }

@@ -3,8 +3,8 @@ import DropdownItem from '../components/DropdownItem.vue';
 
 </script>
 <template>
-  <header class="h-72 flex flex-col justify-center items-center gap-5">
-    <h2 class="text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-violet-500 text-5xl">FAQ</h2>
+  <header class="h-[60vh] bg-gradient-to-br from-[#04052e] to-50% to-[#010108] flex flex-col justify-center items-center gap-5">
+    <h1 class="text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-800 text-5xl">FAQ</h1>
     <p class="text-lg text-zinc-300">Frequenty asked questions</p>
   </header>
   <section class=" self-center mb-32 md:px-24 w-[90%] md:w-[95%] lg: max-w-4xl">
@@ -17,7 +17,7 @@ import DropdownItem from '../components/DropdownItem.vue';
     <ol class=" py-6 list-decimal font-semibold flex flex-col gap-9">
       <li>
         <span class="text-lg text-white">Carbon Footprint Tracking</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can offer tools that automatically calculate the carbon footprint of shipments, transportation, and supply chain activities. This data can be pulled from logistics providers, energy usage, and production records.
           </li>
@@ -28,7 +28,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Sustainable Supply Chain Management</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can integrate sustainability metrics into the supply chain management process by tracking suppliers' sustainability practices and certifications (e.g., fair trade, renewable energy usage).
           </li>
@@ -39,7 +39,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">ESG Reporting Tools</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> Automated reporting tools can be built into TraiBox, generating detailed ESG reports for internal management and external stakeholders. These reports would align with global standards like GRI (Global Reporting Initiative) or SASB (Sustainability Accounting Standards Board).
           </li>
@@ -50,7 +50,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Circular Economy Features</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox could offer functionalities that encourage recycling and reusing materials within supply chains. For instance, users can track and optimize product life cycles and integrate reverse logistics solutions to return and recycle goods.
           </li>
@@ -61,7 +61,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Sustainable Financing and Incentives</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> By integrating blockchain and AI, TraiBox can help businesses access green financing options. Companies meeting sustainability targets can be rewarded with better financing rates or receive tax incentives.
           </li>
@@ -72,7 +72,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Real-Time Sustainability Monitoring</span> 
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> AI-powered dashboards can provide real-time data on a company's environmental performance, including emissions, resource usage, and compliance with sustainability targets.
           </li>
@@ -90,7 +90,7 @@ import DropdownItem from '../components/DropdownItem.vue';
     <ol class="py-5 list-decimal font-semibold flex flex-col gap-9">
       <li>
         <span class="text-lg text-white">Automated Compliance Management</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can automatically track and update businesses on global trade regulations, tariffs, customs requirments, and export/import restrictions. The platform would continuoulsy monitor changes in legislation and update relevant compliance protocols.
           </li>
@@ -101,7 +101,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Customs and Tariff Compliance</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can integrate with customs databases and provide businesses with accurate tariff codes, duties, and taxes for various countries. This helps companies calculate the correct fees for shipments.
           </li>
@@ -112,7 +112,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Trade Documentation</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can generate and manage all necessary trade documents, including bills of lading, certificates of origin, and shipping manifests. The platform could also offer e-signature functionality to 
             streamline documentation processes.
@@ -124,7 +124,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">GDPR and Data Protection</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> For businesses operating in Europe, TraiBox can help with <span class="font-bold">GDPR</span> (General Data Protection Regulation) compliance by securely handling customer and transactional data in accordance with the latest privacy laws.
           </li>
@@ -135,7 +135,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white"> ESG and Sustainability Compliance</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can track a company's sustainability efforts and compliance with <span class="font-bold">ESG</span> (Environmental, Social, and Governance) standards. The platform could monitor carbon emissions, supplier sustainability practices, and ethical labor practices.
           </li>
@@ -146,7 +146,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white"> Sanctions and Trade Restrictions Monitoring</span> 
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can flag potential violations by monitoring international sanctions and trade restrictions (e.g., embargoes) in real-time. It can alert businesses to risky transactions or partners that could lead to legal issues.
           </li>
@@ -157,7 +157,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Audit-Ready Reports</span> 
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span>  TraiBox can generate audit-ready reports with detailed records of trade transactions, compliance steps, and documentation history. These can be shared with regulators during inspections or audits.
           </li>
@@ -172,7 +172,7 @@ import DropdownItem from '../components/DropdownItem.vue';
   <DropdownItem>
     <template #header>Q4. How does TraiBox handle data security?</template>
     <span class="font-bold text-white">TraiBox</span> takes data security very seriously and implements several robust measures to protect sensitive information. Here's how it handles data security:
-    <ol class="pl-7 pr-2 pt-6 list-decimal font-semibold flex flex-col gap-10 py-6 bg-zinc-800 rounded-md my-5">
+    <ol class="pl-7 pr-2 pt-6 list-decimal font-semibold flex flex-col gap-10 py-6 glassEffect rounded-md my-5">
    
           <li>
             <span class="text-lg text-white">Technical and Organizational Measures:</span><br/><span class="font-normal"> TraiBox applies strong technical safeguards to protect personal data from unauthorized access, alteration, or disclosure. This includes encryption, secure data storage, and regular system audits to ensure the integrity of the data.</span>
@@ -194,7 +194,7 @@ import DropdownItem from '../components/DropdownItem.vue';
     <ol class="py-5 list-decimal font-semibold flex flex-col gap-9">
       <li>
         <span class="text-lg text-white">Blockchain-Enabled Trade Finance</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox integrates blockchain technology to provide secure, transparent, and tamper-proof transactions. Smart contracts can automate and verify financing agreements, reducing the need for intermediaries.
           </li>
@@ -205,7 +205,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Real-Time Financial Tracking</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox offers real-time tracking of financial transactions and trade operations, ensuring that companies and trade finance providers have up-to-date insights into cash flows and risk exposure.
           </li>
@@ -216,7 +216,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Risk Management</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox provides tools to assess the creditworthiness of trading partners and suppliers, ensuring that finance providers can make informed decisions and reduce the risk of defaults.
           </li>
@@ -227,7 +227,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Financing Options</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span>  TraiBox can connect businesses with various financing solutions, such as letters of credit, supply chain financing, and invoice factoring.
           </li>
@@ -245,7 +245,7 @@ import DropdownItem from '../components/DropdownItem.vue';
     <ol class="py-5 list-decimal font-semibold flex flex-col gap-9">
       <li>
         <span class="text-lg text-white">ERP Integration (Enterprise Resource Planning)</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can connect with ERP systems like SAP, Oracle, or Microsoft Dynamics to sync critical business processes such as inventory management, procurement, and finance.
           </li>
@@ -256,7 +256,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">CRM Integration (Customer Relationship Management)</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox integrates with CRMs like Salesforce or HubSpot to synchronize customer and trade data. This allows businesses to manage client relationships while overseeing trade operations from one platform.
           </li>
@@ -267,7 +267,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Supply Chain Management (SCM) Integration</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox integrates with SCM platforms to streamline logistics, procurement, and supplier management. Data such as shipment status, inventory levels, and supplier performance can be synced across platforms.
           </li>
@@ -278,7 +278,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Accounting and Finance Software</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox can integrate with accounting systems like QuickBooks or Xero to handle financial transactions, invoicing, and trade finance operations.
           </li>
@@ -289,7 +289,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Custom API Integration</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox offers API access, allowing businesses to create custom integrations with specific software tailored to their operational needs.
           </li>
@@ -308,7 +308,7 @@ import DropdownItem from '../components/DropdownItem.vue';
     <ol class="py-5 list-decimal font-semibold flex flex-col gap-9">
       <li>
         <span class="text-lg text-white"> AI-Powered Analytics</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span>  TraiBox uses AI to analyze large volumes of trade data in real-time, delivering actionable insights and forecasts. This includes analyzing trends, identifying patterns, and providing recommendations to optimize trade operations.
           </li>
@@ -319,7 +319,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Real-Time Dashboards</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox offers customizable dashboards that display real-time metrics such as shipment tracking, trade volumes, financial transactions, and compliance statuses. These dashboards are accessible via desktop or mobile devices.
           </li>
@@ -330,7 +330,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Supply Chain Visibility</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox provides real-time visibility into supply chain activities, from procurement to delivery, allowing businesses to track inventory levels, shipments, and supplier performance.
           </li>
@@ -341,7 +341,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Predictive Analytics</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> The platform can predict future trends in trade volumes, market demands, or potential disruptions using historical data and machine learning algorithms.
           </li>
@@ -352,7 +352,7 @@ import DropdownItem from '../components/DropdownItem.vue';
       </li>
       <li>
         <span class="text-lg text-white">Compliance Monitoring</span>
-        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 bg-zinc-800 rounded-md mt-4">
+        <ul class="list-disc pl-6 pr-2 font-normal flex flex-col gap-8 py-6 glassEffect rounded-md mt-4">
           <li>
             <span class="font-bold text-white">How it Works:</span> TraiBox continuously monitors compliance with global trade regulations in real-time, alerting businesses of potential issues before they arise.
           </li>
@@ -366,3 +366,12 @@ import DropdownItem from '../components/DropdownItem.vue';
   </DropdownItem>
 </section>
 </template>
+<style scoped>
+.glassEffect{
+  background: rgba(0, 78, 212, 0.027);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(3, 58, 153, 0.27);
+}
+</style>

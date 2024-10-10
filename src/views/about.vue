@@ -1,116 +1,93 @@
 
 <template>
- <!--  <section > -->
-    <div id="hero" class="bg-[url(/hero/peakpx.jpg)] bg-no-repeat bg-cover relative">
-      <div class="flex flex-col justify-center items-center w-full absolute top-0 bottom-0 bg-gradient-to-t  from-darkBg">
-      <h2>Mission & Vision</h2>
-      <p>"Empowering businesses to navigate and optimize global trade through cutting-edge technology and innovation."</p>
+    <section class="flex flex-row flex-wrap justify-center md:items-center py-20 px-4 xl:py-24 2xl:py-36 bg-gradient-to-br from-[#04052e] to-60% to-[#010108] h-[70vh]">
+    <div class=" flex flex-row flex-wrap justify-center gap-4 md:gap-8 xl:gap-8 ">
+      <h1 class="text-center font-medium leading-tight w-full text-white ">Mission & Vision</h1>
+      <p class="text-blue-200 text-center">"Empowering businesses to navigate and optimize global trade through cutting-edge technology and innovation."</p>
     </div>
-    </div>
- 
-<!--   </section> -->
-<h3>Our Team</h3>
-  <section>
+  </section>
 
-    <div class="team">
 
-        <img class="border-1 rounded-full shadow-[0px_0px_94px_9px_rgba(3,83,232,0.7)] border-[rgb(0,193,207)]" src="/team/juan.png">
+<h3 class=" text-center text-3xl text-[#eee]">Our Team</h3>
+  <section class="flex flex-row flex-wrap justify-center items-stretch gap-8 my-8">
 
-      <div class="teamTxt">
-      <h4>Juan Da Rocha - CEO Portugal </h4>
-      <p>
-        Serial Entrepreneur, 
-        experienced in Structured 
-        Trade Finance.
-        Former professor of Project 
-        Valuation under 
-        Sustainable Criteria.
-      </p>
+    <div class="flex flex-col w-72 justify-start p-2 gap-4 rounded-lg  glassEff">
+      <img class="border-1 rounded-full w-32 h-32 object-cover self-center object-top" src="/team/juan.png" alt="Picture of CEO">
+      <div class="self-center flex flex-col gap-3">
+        <h4 class="text-center text-blue-100/60 text-lg"><span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">Juan Da Rocha - </span><br/>CEO Portugal </h4>
+        <ul class="flex flex-col gap-2 text-[#eee]/80 list-disc pl-5">
+          <li>
+            Serial Entrepreneur
+          </li>
+          <li> 
+          
+            Experienced in Structured 
+            Trade Finance.
+          </li>
+          <li>
+            Former professor of Project 
+            Valuation under 
+            Sustainable Criteria.
+          </li>
+        </ul>
     </div>
     </div>
-    <div class="team">
-
-        <img class="border-1 rounded-full shadow-[0px_0px_94px_9px_rgba(3,83,232,0.7)] border-[rgb(0,193,207)]" src="/team/carlos.png">
-      
-      
-      <div class="teamTxt">
-      <h4>Carlos Abreu - CTO Spain
-      </h4>
-      <p>
-        Serial Entrepreneur experienced and SaaS development 
-        applications.
-        Secretary General at the 
-        Blockchain Association, Valencia.
-        Lean Six Sigma - Black Belt.
-      </p>
-    </div>
+    <div class="flex flex-col w-72 justify-start p-2 gap-4 rounded-lg glassEff">
+      <img class="border-1 rounded-full w-32 h-32 object-cover self-center" src="/team/carlos.png" alt="Picture of CTO">
+      <div class="flex flex-col self-center gap-3">
+        <h4 class="text-center text-blue-100/60 text-lg"><span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">Carlos Abreu -</span> 
+          <br/>CTO Spain
+        </h4>
+        <ul class="flex flex-col gap-2 text-[#eee]/80 list-disc pl-5">
+          <li>
+            Serial Entrepreneur 
+          </li>
+          <li> 
+            Experienced SaaS application development.
+          </li>
+          <li>
+            Secretary General at the 
+            Blockchain Association, Valencia.
+          </li>
+          <li>
+            Lean Six Sigma - Black Belt.
+          </li>
+        </ul>
+      </div>
     </div> 
-    <div class="team">
-      
-      <img class="border-1 rounded-full shadow-[0px_0px_94px_9px_rgba(3,83,232,0.7)] border-[rgb(0,193,207)]" src="/team/matthias.png">
-    
-      <div class="teamTxt">
-      <h4>Matthias Apel - CFO Germany</h4>
-      <p>
-        Serial Entrepreneur with 
-        experience in Financing and 
-        International Trade.
-        Market experience all across 
-        Europe, Latin America and 
-        Caribe.
-      </p>
-    </div>
+    <div class="flex flex-col w-72 justify-start p-2 gap-4 rounded-lg glassEff">
+      <img class="border-1 rounded-full w-32 h-32 object-cover self-center" src="/team/matthias.png" alt="Picture of CFO">
+      <div class="self-center flex flex-col gap-3">
+        <h4 class="text-center text-blue-100/60 text-lg"><span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">Matthias Apel -</span> <br/>CFO Germany</h4>
+        <ul class="flex flex-col gap-2 text-[#eee]/80 list-disc pl-5">
+          <li>
+            Serial Entrepreneur 
+          </li>
+          <li> 
+            Experienced in Financing and 
+            International Trade.
+          </li>
+          <li>
+            Market experience all across 
+            Europe, Latin America and 
+            Caribe.
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
 </template>
 <style scoped>
-#hero{
 
-  width: 100%;
-  height: 50vh;
-  /* margin-top: 6rem; */
-  margin-bottom: 5rem;
-
-  text-align: center;
-/*   padding: 1rem;
-  padding-top: 3rem; */
-
-  color: rgb(255, 255, 255);
+.glassEff{
+background: rgba(0, 78, 212, 0.11);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(3, 58, 153, 0.27);
 }
-section{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.team{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  margin: 2rem 1.5rem;
-  text-align: center;
-/*   width: 100%; */
-  position: relative;
-}
-
- img{
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
-  align-self: center;
-  border-radius: 50%;
- }
-
-.teamTxt{
-  width: 20rem;
-  color: rgb(255, 255, 255);
-  border-radius: 6px;
-  align-self: center;
-}
-.teamTxt h4{
-  margin: 1rem 0;
+img{
+  border: 3px solid rgba(3, 58, 153, 0.27);
 }
 </style>
