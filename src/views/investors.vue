@@ -7,7 +7,7 @@
       
       <Chart id="chart-1" type="bar" :data="chart1Data" :options="barChartOptions" class="h-[35vh] w-[95vw] sm:h-[50vh] sm:w-[80vw] md:w-auto md:h-full xl:h-[50vh] 2xl:h-[35vh] row-span-2 col-start-6 col-span-7"/>
       
-      <p class="lorem w-[85vw] md:w-auto row-start-2 col-start-1 col-span-5 md:text-lg lg:text-2xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium unde ullam dolorum earum saepe maxime dolore omnis, natus dolor autem consequatur ipsam illo.</p>
+      <p class="w-[85vw] md:w-auto row-start-2 col-start-1 col-span-5 md:text-lg lg:text-2xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium unde ullam dolorum earum saepe maxime dolore omnis, natus dolor autem consequatur ipsam illo.</p>
     
     </section>
 <!-- end of #market-analysis section -->
@@ -17,7 +17,7 @@
 
       <h2 class="w-full col-span-12">BSV Blockchain: scalability and <br class="lg:hidden"> low transaction costs</h2>  
       
-      <p class="lorem w-[85vw] md:w-auto row-start-2 col-start-4 col-span-6 lg:col-start-5 lg:col-span-4 2xl:col-start-4 2xl:col-span-6 md:text-lg lg:text-2xl xl:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque inventore, aperiam sint error necessitatibus odit quibusdam voluptatum velit rem temporibus esse impedit delectus at! </p>
+      <p class="w-[85vw] md:w-auto row-start-2 col-start-4 col-span-6 lg:col-start-5 lg:col-span-4 2xl:col-start-4 2xl:col-span-6 md:text-lg lg:text-2xl xl:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque inventore, aperiam sint error necessitatibus odit quibusdam voluptatum velit rem temporibus esse impedit delectus at! </p>
       
       <Chart id="chart-2" type="doughnut" :data="chart2Data" :options="donughtChartOptions" :canvasProps="{'role': 'img', 'aria-label': 'Data'}" class="w-[40vw] row-start-2 col-start-1 col-span-3 lg:col-span-4 2xl:col-span-3 md:w-full" />
         
@@ -32,7 +32,7 @@
       
       <Chart id="chart-4" type="line" :data="chart4Data" :options="lineChartOptions" class="h-[35vh] w-[95vw] sm:h-[50vh] sm:w-[80vw] md:w-auto md:h-full xl:h-[50vh] 2xl:h-[35vh] row-start-1 row-span-2 col-start-1 col-span-6" />
       
-      <p class="lorem w-[85vw] md:w-auto row-start-2 col-start-7 col-span-6 md:text-lg lg:text-2xl xl:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo facilis iusto quia placeat alias ab sed! Saepe eius cupiditate provident consequuntur quo nihil, repellendus porro! Cum voluptatibus aspernatur quis aliquam. </p>
+      <p class="w-[85vw] md:w-auto row-start-2 col-start-7 col-span-6 md:text-lg lg:text-2xl xl:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo facilis iusto quia placeat alias ab sed! Saepe eius cupiditate provident consequuntur quo nihil, repellendus porro! Cum voluptatibus aspernatur quis aliquam. </p>
     </section>
     <!-- end of #revenue-projections section -->
     
