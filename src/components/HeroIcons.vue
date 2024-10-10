@@ -2,7 +2,7 @@
   <div id="iconWrapper" class="flex flex-row flex-wrap items-baseline justify-center mt-4 gap-5 md:gap-20 ">
     <div class="icons text-center w-50  m-4 flex flex-col items-center justify-center ">
       <div class="glassEff rounded-full p-5" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="3 2 19 19">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Ai icon" width="3rem" height="3rem" viewBox="3 2 19 19">
           <path
           fill="url(#gradient)"
           d="M21 11V9h-2V7a2.006 2.006 0 0 0-2-2h-2V3h-2v2h-2V3H9v2H7a2.006 2.006 0 0 0-2 2v2H3v2h2v2H3v2h2v2a2.006 2.006 0 0 0 2 2h2v2h2v-2h2v2h2v-2h2a2.006 2.006 0 0 0 2-2v-2h2v-2h-2v-2Zm-4 6H7V7h10Z"
@@ -25,7 +25,7 @@
     
     <div class="icons text-center w-50 m-4 flex flex-col items-center justify-center">
       <div class="glassEff rounded-full p-5">
-        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Blockchain icon" width="3rem" height="3rem" viewBox="0 0 24 24">
           <path
           fill="url(#gradient)"
           d="M12 8L9 9.75v3.5L12 15l3-1.75v-3.5Zm1.517 2.04l-1.53.892l-1.517-.885L12 9.155Zm-3.527.882l1.484.866v1.75l-1.484-.865Zm2.474 2.653v-1.767l1.546-.902v1.767ZM3 0L0 1.75v3.5L3 7l3-1.75v-3.5Zm1.517 2.04l-1.53.892l-1.517-.885L3 1.155ZM.99 2.921l1.484.866v1.75L.99 4.674Zm2.474 2.653V3.808l1.546-.902v1.767ZM3 17l-3 1.75v3.5L3 24l3-1.75v-3.5Zm1.517 2.04l-1.53.892l-1.517-.885L3 18.155Zm-3.527.882l1.484.866v1.75L.99 21.674Zm2.474 2.653v-1.767l1.546-.902v1.767ZM21 0l-3 1.75v3.5L21 7l3-1.75v-3.5Zm1.517 2.04l-1.53.892l-1.517-.885L21 1.155Zm-3.527.882l1.484.866v1.75l-1.484-.865Zm2.474 2.653V3.808l1.546-.902v1.767ZM21 17l-3 1.75v3.5L21 24l3-1.75v-3.5Zm1.517 2.04l-1.53.892l-1.517-.885l1.53-.892Zm-3.527.882l1.484.866v1.75l-1.484-.865Zm2.474 2.653v-1.767l1.546-.902v1.767ZM9 3h6v1H9zm0 17h6v1H9zM3.5 9v6h-1V9zm3.793-.172L5.172 6.707L5.879 6L8 8.12zM16 8.293l2.121-2.121l.707.707L16.707 9zm-7.872 6.586L6.007 17l-.707-.707l2.121-2.121zm8.751-.75L19 16.25l-.707.707l-2.121-2.121zM21.5 9v6h-1V9z"
@@ -38,7 +38,7 @@
     
     <div class="icons text-center w-50 m-4 flex flex-col items-center justify-center">
       <div class="glassEff rounded-full p-5">
-        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 32 32">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Sustainability icon" width="3rem" height="3rem" viewBox="0 0 32 32">
           <path
           fill="url(#gradient)"
           d="M21.57 27.75A12.9 12.9 0 0 1 16 29C8.832 29 3 23.168 3 16c0-3.075 1.057-5.979 3-8.308V10h2V4H2v2h2.842A14.86 14.86 0 0 0 1 16c0 8.271 6.729 15 15 15a14.9 14.9 0 0 0 6.43-1.444z"

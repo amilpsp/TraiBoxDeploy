@@ -1,6 +1,6 @@
 <template>
       <div class="glassEff w-fit p-4 h-min rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" 
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Pin icon"
         width="2rem" 
         height="2rem"       
         viewBox="0 0 28 28">
